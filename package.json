@@ -1,0 +1,37 @@
+{
+  "name": "phaser-sandbox",
+  "version": "1.0.0",
+  "description": "Boilerplate for a web-server for phaser 2D HTML5/JS games",
+  "main": "server.js",
+  "scripts": {
+    "compile-sandbox": "babel public/sandbox/src/app.js -d public/sandbox/js",
+    "start-prod": "NODE_ENV=production node server.js",
+    "start-dev": "nodemon server.js open /public/hello-world/index.html"
+  },
+  "author": "Luke Morgan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "engines": {
+    "node": ">10"
+  }
+}

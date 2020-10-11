@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Phaser Sandbox</title>
+
+    <style type="text/css">
+        *,
+        *::before,
+        *::after {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            font-size: 62.5%;
+            position: relative;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+
+        #sandbox-game {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sandbox-game"></div>
+    <script src="./../phaser/dist/phaser-arcade-physics.min.js"></script>
+    <script type="text/javascript" src="./../sandbox/src/sandboxApp.js"></script>
+</body>
+
+</html>
